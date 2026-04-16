@@ -1,26 +1,26 @@
 class Hasp < Formula
   desc "Local-first broker for managed secrets in agent workflows"
   homepage "https://gethasp.com"
-  version "0.1.4"
+  version "0.1.5"
   license :cannot_represent
   on_macos do
     on_arm do
-      url "https://downloads.gethasp.com/hasp/releases/v0.1.4/hasp_0.1.4_darwin_arm64.tar.gz"
-      sha256 "1616114048b83330ff4808478334a89570cc2263d95b183a8eb9f17e18a49e59"
+      url "https://downloads.gethasp.com/hasp/releases/v0.1.5/hasp_0.1.5_darwin_arm64.tar.gz"
+      sha256 "0f6d363b27492274fd94117ca561e48e17b96e72460b898f65a9c78017930377"
     end
     on_intel do
-      url "https://downloads.gethasp.com/hasp/releases/v0.1.4/hasp_0.1.4_darwin_amd64.tar.gz"
-      sha256 "480a2fe904a2dc24597667068b3ecbd3ff0ff4049ff26f90921518d2400cbf60"
+      url "https://downloads.gethasp.com/hasp/releases/v0.1.5/hasp_0.1.5_darwin_amd64.tar.gz"
+      sha256 "1c06fd0381a673b2bd51c99df3c396c4487e49973ef1c5ee307029e4b385f158"
     end
   end
   on_linux do
     on_arm do
-      url "https://downloads.gethasp.com/hasp/releases/v0.1.4/hasp_0.1.4_linux_arm64.tar.gz"
-      sha256 "8170b4e44580bdf9280ce23e47ce7b6a1b6067cde1a0dd698a2de95dfe655234"
+      url "https://downloads.gethasp.com/hasp/releases/v0.1.5/hasp_0.1.5_linux_arm64.tar.gz"
+      sha256 "237f72e12f0ef08cd113947e9100629ff6caad70e860d485d9123c807c13c30c"
     end
     on_intel do
-      url "https://downloads.gethasp.com/hasp/releases/v0.1.4/hasp_0.1.4_linux_amd64.tar.gz"
-      sha256 "e196532da2a901dc2c7a3cfc551f8a6dbb899b0b04e77177493bfce8b2d205c6"
+      url "https://downloads.gethasp.com/hasp/releases/v0.1.5/hasp_0.1.5_linux_amd64.tar.gz"
+      sha256 "9ddcd75a8886d85da0dcb2a9b199ccb97bc4e9829f71b8bb4f78e17d5f44c7dc"
     end
   end
   def install
