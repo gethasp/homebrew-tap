@@ -5,21 +5,21 @@ class Hasp < Formula
   license :cannot_represent
   on_macos do
     on_arm do
-      url "https://downloads.gethasp.com/hasp/releases/v0.1.11/hasp_0.1.11_darwin_arm64.tar.gz"
+      url "https://github.com/ehmo/hasp/releases/download/v0.1.11/hasp_0.1.11_darwin_arm64.tar.gz"
       sha256 "fd935c2fd17c83ae96675ed5f74ef241ec00b1240c955bb3ab3359c18afa865d"
     end
     on_intel do
-      url "https://downloads.gethasp.com/hasp/releases/v0.1.11/hasp_0.1.11_darwin_amd64.tar.gz"
+      url "https://github.com/ehmo/hasp/releases/download/v0.1.11/hasp_0.1.11_darwin_amd64.tar.gz"
       sha256 "2e0fb25e2a7b5d4907dd989cd56b36cac63623fad7d2b060ba01d40efe172242"
     end
   end
   on_linux do
     on_arm do
-      url "https://downloads.gethasp.com/hasp/releases/v0.1.11/hasp_0.1.11_linux_arm64.tar.gz"
+      url "https://github.com/ehmo/hasp/releases/download/v0.1.11/hasp_0.1.11_linux_arm64.tar.gz"
       sha256 "c348127c2ccc83ea2f18a60aaa4b70fb13a5046fff717ac282549f89a18f373b"
     end
     on_intel do
-      url "https://downloads.gethasp.com/hasp/releases/v0.1.11/hasp_0.1.11_linux_amd64.tar.gz"
+      url "https://github.com/ehmo/hasp/releases/download/v0.1.11/hasp_0.1.11_linux_amd64.tar.gz"
       sha256 "91c18f78d575c710c071a67fa9b846b9eecc120abe9d4a45eb44f1f9adabd8c7"
     end
   end
