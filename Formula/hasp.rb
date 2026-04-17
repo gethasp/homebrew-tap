@@ -1,26 +1,26 @@
 class Hasp < Formula
   desc "Local-first broker for managed secrets in agent workflows"
   homepage "https://gethasp.com"
-  version "0.1.11"
+  version "0.1.12"
   license :cannot_represent
   on_macos do
     on_arm do
-      url "https://github.com/gethasp/homebrew-tap/releases/download/v0.1.11/hasp_0.1.11_darwin_arm64.tar.gz"
-      sha256 "fd935c2fd17c83ae96675ed5f74ef241ec00b1240c955bb3ab3359c18afa865d"
+      url "https://github.com/gethasp/homebrew-tap/releases/download/v0.1.12/hasp_0.1.12_darwin_arm64.tar.gz"
+      sha256 "8878cf4ab26aab5e74dc411d9955958fbbf5332042900d98ea1ba37632e60fed"
     end
     on_intel do
-      url "https://github.com/gethasp/homebrew-tap/releases/download/v0.1.11/hasp_0.1.11_darwin_amd64.tar.gz"
-      sha256 "2e0fb25e2a7b5d4907dd989cd56b36cac63623fad7d2b060ba01d40efe172242"
+      url "https://github.com/gethasp/homebrew-tap/releases/download/v0.1.12/hasp_0.1.12_darwin_amd64.tar.gz"
+      sha256 "7f3fe463a3c78d0621e1e70f7bc7db21f06954833395929389439b5210ec1281"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/gethasp/homebrew-tap/releases/download/v0.1.11/hasp_0.1.11_linux_arm64.tar.gz"
-      sha256 "c348127c2ccc83ea2f18a60aaa4b70fb13a5046fff717ac282549f89a18f373b"
+      url "https://github.com/gethasp/homebrew-tap/releases/download/v0.1.12/hasp_0.1.12_linux_arm64.tar.gz"
+      sha256 "654b2fca122521669e9aad18f14e7dbf63e7d495e49cd6d7f8dc61b06ac52ff5"
     end
     on_intel do
-      url "https://github.com/gethasp/homebrew-tap/releases/download/v0.1.11/hasp_0.1.11_linux_amd64.tar.gz"
-      sha256 "91c18f78d575c710c071a67fa9b846b9eecc120abe9d4a45eb44f1f9adabd8c7"
+      url "https://github.com/gethasp/homebrew-tap/releases/download/v0.1.12/hasp_0.1.12_linux_amd64.tar.gz"
+      sha256 "187204aaad4bced168450de5759dde00c13bebc9dc8b79bb5e9a55c429103e5e"
     end
   end
   def install
