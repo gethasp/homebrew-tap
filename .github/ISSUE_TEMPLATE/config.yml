@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: HASP product issues
+    url: https://github.com/gethasp/hasp/issues
+    about: Report product behavior, runtime bugs, or feature requests in the main public repo.
+  - name: Security reports
+    url: https://github.com/gethasp/hasp/security/advisories/new
+    about: Report vulnerabilities privately. Do not open public security issues.

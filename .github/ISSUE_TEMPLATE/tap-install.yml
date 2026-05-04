@@ -1,0 +1,34 @@
+name: Tap install issue
+description: Report a problem installing or upgrading HASP through Homebrew.
+title: "Homebrew install issue: "
+labels:
+  - homebrew
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, tokens, vault contents, or private logs.
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: Which Homebrew command failed?
+      placeholder: brew install gethasp/tap/hasp
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Paste the relevant non-secret output.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Paste `brew --version`, `brew config`, and `brew info gethasp/tap/hasp`.
+      render: text
+    validations:
+      required: true

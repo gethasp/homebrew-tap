@@ -29,7 +29,8 @@ class Hasp < Formula
     (pkgshare/"agent-profiles").install Dir["agent-profiles/*"]
     (pkgshare/"profiles").install Dir["profiles/*"]
     (pkgshare/"scripts").install Dir["scripts/*"]
-    pkgshare.install "README.md", "QUICKSTART.md", "OPERATOR_GUIDE.md", "PRODUCTION_GUIDE.md", "RELEASE_MANIFEST", "LICENSE"
+    pkgshare.install "README.md", "QUICKSTART.md", "OPERATOR_GUIDE.md",
+                     "PRODUCTION_GUIDE.md", "RELEASE_MANIFEST", "LICENSE"
   end
 
   def caveats
