@@ -1,26 +1,26 @@
 class Hasp < Formula
   desc "Local-first broker for managed secrets in agent workflows"
   homepage "https://gethasp.com"
-  version "1.0.0"
+  version "1.0.1"
   license :cannot_represent
   on_macos do
     on_arm do
-      url "https://downloads.gethasp.com/hasp/releases/v1.0.0/hasp_1.0.0_darwin_arm64.tar.gz"
-      sha256 "f06c06bc2921c4658a5100ca843597b9c8340da65e5ec2595adf5da92d439b65"
+      url "https://downloads.gethasp.com/hasp/releases/v1.0.1/hasp_1.0.1_darwin_arm64.tar.gz"
+      sha256 "8fc6d057efef6628ee77fc9fb0594e28f3d99e6da2f716d5e533a586c0f6e940"
     end
     on_intel do
-      url "https://downloads.gethasp.com/hasp/releases/v1.0.0/hasp_1.0.0_darwin_amd64.tar.gz"
-      sha256 "3943be674c493c93f2947a56c27731e1581377d1eaa1d9f26c4131e5a29ab711"
+      url "https://downloads.gethasp.com/hasp/releases/v1.0.1/hasp_1.0.1_darwin_amd64.tar.gz"
+      sha256 "0c4c2295ed28024ef6a5fa95ecdffed1965f6a5312a00da8e81090a690702593"
     end
   end
   on_linux do
     on_arm do
-      url "https://downloads.gethasp.com/hasp/releases/v1.0.0/hasp_1.0.0_linux_arm64.tar.gz"
-      sha256 "364c22ca0db8a74253f1ded29f04f72bf246ca15166e35c1168c4c831eeb5a67"
+      url "https://downloads.gethasp.com/hasp/releases/v1.0.1/hasp_1.0.1_linux_arm64.tar.gz"
+      sha256 "c1327b215e794b9d6c1f4dd18b0ca0cb6afe119b9b10126b7e06a428b93df9cd"
     end
     on_intel do
-      url "https://downloads.gethasp.com/hasp/releases/v1.0.0/hasp_1.0.0_linux_amd64.tar.gz"
-      sha256 "5bc98fbbdd79f9c6277631aaba756b5b8238b0f492f371c88f14fc3d18d1a666"
+      url "https://downloads.gethasp.com/hasp/releases/v1.0.1/hasp_1.0.1_linux_amd64.tar.gz"
+      sha256 "db50aa3fcb2421ee51a63c4ec183b04ee75b92ceb42ad07be5c2573fed35c844"
     end
   end
   def install
@@ -29,8 +29,7 @@ class Hasp < Formula
     (pkgshare/"agent-profiles").install Dir["agent-profiles/*"]
     (pkgshare/"profiles").install Dir["profiles/*"]
     (pkgshare/"scripts").install Dir["scripts/*"]
-    pkgshare.install "README.md", "QUICKSTART.md", "OPERATOR_GUIDE.md",
-                     "PRODUCTION_GUIDE.md", "RELEASE_MANIFEST", "LICENSE"
+    pkgshare.install "README.md", "QUICKSTART.md", "OPERATOR_GUIDE.md", "PRODUCTION_GUIDE.md", "RELEASE_MANIFEST", "LICENSE"
   end
 
   def caveats
