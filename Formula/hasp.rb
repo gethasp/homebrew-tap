@@ -1,26 +1,26 @@
 class Hasp < Formula
   desc "Local-first broker for managed secrets in agent workflows"
   homepage "https://gethasp.com"
-  version "1.0.6"
+  version "1.0.11"
   license :cannot_represent
   on_macos do
     on_arm do
-      url "https://downloads.gethasp.com/hasp/releases/v1.0.6/hasp_1.0.6_darwin_arm64.tar.gz"
-      sha256 "7d3fb875e6780060429af3826720bfbe41bf3be7bd0c58eaaf0f56f5c5fa4e29"
+      url "https://downloads.gethasp.com/hasp/releases/v1.0.11/hasp_1.0.11_darwin_arm64.tar.gz"
+      sha256 "d401d2616fd29d524bdd0d60389d302162586218ce7dc4f09c947d6137acc036"
     end
     on_intel do
-      url "https://downloads.gethasp.com/hasp/releases/v1.0.6/hasp_1.0.6_darwin_amd64.tar.gz"
-      sha256 "5903fe478844e22fdc3f55b5cc64c7656b17d1228b7a8e007fed7bdb82da10e9"
+      url "https://downloads.gethasp.com/hasp/releases/v1.0.11/hasp_1.0.11_darwin_amd64.tar.gz"
+      sha256 "c536885f4b54942af3f87ebe64676fccb548d22cfe1aee4a31c4eceacd40a850"
     end
   end
   on_linux do
     on_arm do
-      url "https://downloads.gethasp.com/hasp/releases/v1.0.6/hasp_1.0.6_linux_arm64.tar.gz"
-      sha256 "6f2e28a50558e078e6ebc1b48d9314e25f0ef89832088bef3b1a978e6457e856"
+      url "https://downloads.gethasp.com/hasp/releases/v1.0.11/hasp_1.0.11_linux_arm64.tar.gz"
+      sha256 "73c517c91f7c1911227020e0b1aeee36d5bdc180296b61aeb78e723dbc1a3076"
     end
     on_intel do
-      url "https://downloads.gethasp.com/hasp/releases/v1.0.6/hasp_1.0.6_linux_amd64.tar.gz"
-      sha256 "d7287d0e134bdd3d7f9f991e6a8c94e0439db21f9416142f1364bcb1a26bd769"
+      url "https://downloads.gethasp.com/hasp/releases/v1.0.11/hasp_1.0.11_linux_amd64.tar.gz"
+      sha256 "cef1e27938db6b24e598c99392bf683f557390434a2a5153c4c9ca83434bb9c7"
     end
   end
   def install
@@ -37,6 +37,8 @@ class Hasp < Formula
       Add #{bin} to PATH if it is not already there.
       Set HASP_HOME and HASP_MASTER_PASSWORD before first use.
       Package docs and helper scripts are installed under: #{pkgshare}
+      If hasp version does not print #{version}, run: which -a hasp
+      Remove or reorder earlier stale binaries such as ~/.local/bin/hasp, then run: hash -r
     EOS
   end
 
